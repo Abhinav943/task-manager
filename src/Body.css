@@ -1,0 +1,143 @@
+/* ================= SCROLL FADE ================= */
+
+.fadeOnScroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fadeOnScroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* ================= BODY SECTION ================= */
+
+.bodySection {
+  width: 100%;
+  padding: 5rem 2rem;
+  background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #fafafa 100%
+  );
+}
+
+/* Soft container to avoid emptiness */
+.bodyShell {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 4.5rem 4rem;
+
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.bodyGrid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 4.5rem;
+  align-items: center;
+}
+
+/* ================= TEXT ================= */
+
+.bodyTextBlock {
+  text-align: left;
+}
+
+.bodyQuote {
+  font-family: "Playfair Display", serif;
+  font-size: 2.3rem;
+  font-style: italic;
+  font-weight: 500;
+  color: #1f1f1f;
+  letter-spacing: 0.04em;
+  line-height: 1.25;
+  margin-bottom: 1.8rem;
+}
+
+.bodyText {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: #555;
+  margin-bottom: 1.4rem;
+}
+
+.bodyText.muted {
+  color: #777;
+  margin-bottom: 3rem;
+}
+
+/* ================= BUTTON ================= */
+
+.signInBtn {
+  padding: 0.85rem 2.4rem;
+  border-radius: 999px;
+  border: none;
+
+  background: linear-gradient(
+    to right,
+    #111111,
+    #2b2b2b
+  );
+  color: #ffffff;
+
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+
+  cursor: pointer;
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.25);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.signInBtn:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 18px 45px rgba(0, 0, 0, 0.35);
+}
+
+/* ================= IMAGE ================= */
+
+.bodyImageWrapper {
+  position: relative;
+  border-radius: 22px;
+  overflow: hidden;
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.18);
+}
+
+.bodyImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 900px) {
+  .bodyShell {
+    padding: 3.5rem 2rem;
+  }
+
+  .bodyGrid {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+
+  .bodyTextBlock {
+    text-align: center;
+  }
+
+  .bodyQuote {
+    font-size: 1.8rem;
+  }
+}

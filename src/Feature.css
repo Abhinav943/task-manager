@@ -1,0 +1,138 @@
+/* ================= FEATURES SECTION ================= */
+.fadeOnScroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fadeOnScroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* ================= FEATURES ================= */
+
+.featuresSection {
+  width: 100%;
+  padding: 9rem 2rem;
+  background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #fafafa 100%
+  );
+}
+
+.featuresShell {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.featuresHeader {
+  max-width: 680px;
+  margin-bottom: 5.5rem;
+}
+
+.featuresEyebrow {
+  font-size: 0.9rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #9a9a9a;
+  margin-bottom: 1rem;
+}
+
+.featuresTitle {
+  font-size: 2.7rem;
+  font-weight: 700;
+  color: #1d1d1f;
+  margin-bottom: 1.2rem;
+}
+
+.featuresSubtitle {
+  font-size: 1.15rem;
+  line-height: 1.75;
+  color: #666;
+}
+
+/* Grid */
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+/* Card */
+.featureCard {
+  position: relative;
+  background: #ffffff;
+  padding: 3rem 2.8rem;
+  border-radius: 28px;
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.95);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.featureCard:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 40px 90px rgba(0, 0, 0, 0.12);
+}
+
+/* Icon */
+.featureIcon {
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(
+    135deg,
+    #f4f4f4,
+    #ffffff
+  );
+
+  color: #444;
+  margin-bottom: 1.6rem;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.8),
+    0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+.featureIcon svg {
+  width: 26px;
+  height: 26px;
+}
+
+/* Text */
+.featureCard h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #1f1f1f;
+  margin-bottom: 0.9rem;
+}
+
+.featureCard p {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: #6c6c6c;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .featuresGrid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .featuresTitle {
+    font-size: 2.1rem;
+  }
+}
