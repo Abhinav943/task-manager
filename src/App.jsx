@@ -1,6 +1,7 @@
 import Header from "./Header"
 import Body from "./Body"
 import Feature from "./Features"
+import Footer from "./Footer"
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
     <Header/>
     <Body/>
     <Feature/>
+    <Footer/>
     </>
   )
 }

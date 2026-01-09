@@ -12,13 +12,19 @@
 }
 /* ================= BODY SECTION ================= */
 
+:root {
+  --white-soft: #fefefe;
+  --bg-soft: #fff6f8;   /* softer pink */
+  --bg: #fffafa;
+}
 .bodySection {
   width: 100%;
   padding: 5rem 2rem;
   background: linear-gradient(
     to bottom,
-    #ffffff 0%,
-    #fafafa 100%
+    var(--white-soft) 0%,
+    var(--bg-soft) 70%,
+    var(--bg) 100%
   );
 }
 
