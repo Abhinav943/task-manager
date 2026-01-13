@@ -7,7 +7,7 @@ import {
   CalendarClock,
   Sparkles,
 } from "lucide-react";
-import "./Feature.css";
+import "./Feature.css"; 
 
 export default function Features() {
   const ref = useRef(null);
